@@ -1,9 +1,9 @@
+import 'package:dartcode/view/home_page.dart';
 import 'package:dartcode/view/second_screen.dart';
-import 'package:dartcode/view/third_screen.dart';
 import 'package:flutter/material.dart';
 
-class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+class ThirdScreen extends StatelessWidget {
+  const ThirdScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -48,10 +48,10 @@ class FirstScreen extends StatelessWidget {
     }
 
     return screenPreferences(
-        screenName: 'First Screen',
+        screenName: 'Third Screen',
         buttons: buttonBuilder(
-            screenWidget: SecondScreen(), buttonName: 'Go to Second Screen'),
+            screenWidget: FirstScreen(), buttonName: 'Go to First Screen'),
         buttons1: buttonBuilder(
-            screenWidget: ThirdScreen(), buttonName: 'Go to Third Screen'));
+            screenWidget: SecondScreen(), buttonName: 'Go to Second Screen'));
   }
 }
